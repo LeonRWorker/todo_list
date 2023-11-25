@@ -59,6 +59,8 @@ class _ToDoListState extends State<ToDoList> {
     setState(() {
       originalTasks.add(
           {'id': originalTasks.length + 1, 'name': text, 'status': 'todo'});
+      tasks.add(
+          {'id': originalTasks.length + 1, 'name': text, 'status': 'todo'});
     });
     _updateTasks();
   }
